@@ -16,7 +16,7 @@
   font-size: 1.2rem;
   color: var(--while-color);
   text-decoration: none;
-  font-weight: 300;
+  font-weight: 200;
 }
 .header__navbar-item{
     margin: 0 8px;
@@ -39,4 +39,17 @@
     right: -10px;
     top: 50%;
     transform: translateY(-50%);
+}
+.header__navbar-item-nolink:hover{
+    opacity: 1;
+    cursor: text;
+}
+.header__navbar-item-icon{
+    text-decoration: none;
+    color: #fff;
+    margin: 0 1px;
+    opacity: 1;
+}
+.header__navbar-item-icon:hover{
+    opacity: 0.7;
 }
