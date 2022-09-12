@@ -22,8 +22,12 @@
     margin: 0 8px;
     position: relative;
 }
+.header__navbar-item:hover .header-qr{
+    display: block;
+    animation: fadeIn ease o.8s;
+}
 .header__navbar-item:hover,.header__navbar-item-link:hover{
-    opacity: 0.7;
+    color: #ffff00;
     cursor: pointer;
 }
 .header__navbar-item--strong{
@@ -41,7 +45,7 @@
     transform: translateY(-50%);
 }
 .header__navbar-item-nolink:hover{
-    opacity: 1;
+    color: rgba(255,255,255,1);
     cursor: text;
 }
 .header__navbar-item-icon{
@@ -52,4 +56,28 @@
 }
 .header__navbar-item-icon:hover{
     opacity: 0.7;
+}
+.header-qr{ 
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 186px;
+    margin-top: 10px;
+    display: none;
+}
+.header-qr-app{
+    display: flex;
+    justify-content: space-around;
+}
+.header-qr-app-link{
+    height: 18px;
+}
+.header-qr-app-link:nth-child(1){
+    margin-left: 5px;
+}
+.header-qr-app-link:nth-child(2){
+    margin-right: 5px;
+}
+.header-qr-code{
+    width: 100%;
 }
