@@ -22,9 +22,9 @@
     margin: 0 8px;
     position: relative;
 }
-.header__navbar-item:hover .header-qr{
+.header__navbar-item--has-qr:hover .header-qr{
     display: block;
-    animation: fadeIn ease o.8s;
+    
 }
 .header__navbar-item:hover,.header__navbar-item-link:hover{
     color: #ffff00;
@@ -57,13 +57,22 @@
 .header__navbar-item-icon:hover{
     opacity: 0.7;
 }
+.header-qr::before{
+    content: "";
+    display: block;
+    width: 100%;
+    position: absolute;
+    height: 27px;
+    top: -8%;
+}
 .header-qr{ 
     position: absolute;
-    top: 100%;
+    top: 110%;
     left: 0;
     width: 186px;
     margin-top: 10px;
     display: none;
+    animation: fadeIn ease-in 0.3s ;
 }
 .header-qr-app{
     display: flex;
