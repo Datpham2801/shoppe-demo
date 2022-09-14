@@ -90,3 +90,61 @@
 .header-qr-code{
     width: 100%;
 }
+.header-notify{
+    width: 500px;
+    position: absolute;
+    background-color: #fff;
+    top: 118%;
+    right: 0;
+    border: 1px solid #dbdbdb;
+    cursor: default;
+    display: none;
+    transform-origin: 80% top;
+}
+.header-notify__header{
+    height: 40px;
+    border-bottom: 1px solid #dbdbdb;
+    cursor: text;
+    user-select: none;
+}
+.header-notify__header h3{
+    font-size: 1.1rem;
+    color: #ccc;
+    line-height: 40px;
+    margin: 0;
+    padding-left: 16px;
+}
+.header-notify-link{
+    display: flex;
+    text-decoration: none;
+    height: 80px;
+    
+}
+.header-notify-link:hover{
+    background-color:#e49891;
+}
+.header-notify-link__img{
+    width: 50px;
+    object-fit: contain;
+}
+.header-notify-link__decription{
+    margin-left: 10px;
+}
+.header-notify-link__decription-sumar{
+    display: block;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    opacity: 0.9;
+    padding-top: 10px;
+}
+.header-notify-link__decription-detail{
+   font-size: 0.9rem;
+   color: rgb(142, 139, 139);
+   padding-bottom: 10px;
+   
+}
+.header__navbar-item--has-notify:hover .header-notify{
+    display: block;
+    animation: Printnotify ease-in 0.3s;
+}
