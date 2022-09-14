@@ -148,3 +148,11 @@
     display: block;
     animation: Printnotify ease-in 0.3s;
 }
+.header-notify::before{
+    content: "";
+    display: block;
+    width: 100%;
+    position: absolute;
+    height: 27px;
+    top: -8%;
+}
